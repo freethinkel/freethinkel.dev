@@ -1,0 +1,12 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import ProfileCard from "../components/ProfileCard.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<PageLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <main class="container">
+    <h1>Hi</h1>
+    <ProfileCard />
+  </main>
+</PageLayout>

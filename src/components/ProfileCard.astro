@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <div class="profile_pic">
+    <img width={70} height={70} src="/assets/profile/im.jpg" alt="I am" />
+  </div>
+  <p class="text">
+    My name is Egor, I do programming, I like keyboards, cli and everything
+    near-terminal. I also create applications for macOS
+  </p>
+</div>
+
+<style>
+  .wrapper {
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .wrapper p:first-of-type {
+    margin-top: 0;
+  }
+  img {
+    border-radius: 10px;
+    width: 180px;
+    min-width: 180px;
+    animation: hue_rotate 4s infinite linear alternate;
+  }
+
+  @media screen and (max-width: 550px) {
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+
+  @keyframes hue_rotate {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+</style>
