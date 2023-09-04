@@ -1,6 +1,6 @@
 ---
 title: "What is the best text editor"
-description: "Lorem ipsum dolor sit amet"
+description: "Choosing the right text editor can make a world of difference in your coding and writing experience"
 pubDate: "Sep 3 2023"
 heroImage: "/assets/blog/the-best-text-editor/hero.jpg"
 ---

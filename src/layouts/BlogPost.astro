@@ -9,12 +9,13 @@ import FormattedDate from "../components/FormattedDate.astro";
 
 type Props = CollectionEntry<"blog">["data"] & { slug: string };
 
-const { title, description, pubDate, updatedDate, slug } = Astro.props;
+const { title, description, pubDate, updatedDate, slug, heroImage } =
+  Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} image={heroImage} />
 
     <style>
       .prose :global(img) {
