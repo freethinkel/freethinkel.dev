@@ -4,7 +4,7 @@ import sitemap from "@astrojs/sitemap";
 import rehypePrettyCode from "rehype-pretty-code";
 
 const prettyCodeOptions = {
-  theme: { dark: "rose-pine-moon", light: "rose-pine-dawn" },
+  theme: { dark: "min-dark", light: "min-light" },
   onVisitLine(node) {
     if (node.children.length === 0) {
       node.children = [

@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <slot />
+</div>
+
+<style>
+  .wrapper {
+    display: inline-block;
+    vertical-align: top;
+    transition: 0.1s;
+    transform: rotate(5deg);
+    font-size: 1.2em;
+
+    &:hover {
+      transform: rotate(-10deg) scale(1.1);
+    }
+  }
+</style>

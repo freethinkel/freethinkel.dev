@@ -1,10 +1,30 @@
 ---
+import AppCard from "../../components/AppCard.astro";
 import PageLayout from "../../layouts/PageLayout.astro";
 ---
 
 <PageLayout>
   <main class="container">
     <h1>Apps</h1>
-    <p>Engineering works 🛠️</p>
+    <div class="apps">
+      <AppCard
+        photo="/public/assets/apps/snap/icon.png"
+        path="/apps/snap"
+        name="Snap"
+      />
+      <AppCard
+        photo="/public/assets/apps/fiendzone/icon.png"
+        path="/apps/friendzone"
+        name="Friendzone"
+      />
+    </div>
   </main>
 </PageLayout>
+
+<style>
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
+</style>

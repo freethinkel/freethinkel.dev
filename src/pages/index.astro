@@ -2,11 +2,28 @@
 import PageLayout from "../layouts/PageLayout.astro";
 import ProfileCard from "../components/ProfileCard.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import TitleCard from "../components/TitleCard.astro";
+import Interactive from "../components/Interactive.astro";
 ---
 
 <PageLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <main class="container">
-    <h1>Hi</h1>
-    <ProfileCard />
+    <h1>
+      <span> I'm</span>
+      <TitleCard url="/assets/profile/im.jpg" description="My photo" />
+      <span>
+        Egor, a software engineer with a passion for
+        <Interactive>⌨️</Interactive>
+         keyboards, tech in general, and I love my beautiful
+        <Interactive>🩵</Interactive> wife.
+      </span>
+    </h1>
   </main>
 </PageLayout>
+
+<style>
+  h1 {
+    display: inline;
+    gap: 10px;
+  }
+</style>

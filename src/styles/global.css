@@ -1,26 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@300;400;700&display=swap");
 
 :root {
-  --color-accent: #ffd4b5;
-  --color-background: #fefdfc;
-  --color-text: #4f3f38;
-  --color-title: #2d1a08;
-  --color-link: #b86d38;
-  --color-code: #feeedb;
-
   --shadow1: 0 3px 1rem rgba(0, 0, 0, 0.5);
+  --shadow2: 0 16px 16px -4px #74747414, 0 6px 6px -3px #6969690f,
+    0 4px 4px -2px #7171710f, 0 3px 3px -1.5px #7474740f,
+    0 2px 2px -1px #6f6f6f0f, 0 1px 1px -0.5px #6d6d6d0f,
+    0 0.5px 0.5px #6c6c6c14;
 
-  font-family: "IBM Plex Sans", "Roboto Mono", sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+:root {
+  --color-accent: #000000;
+  --color-background: #fefdfc;
+  --color-text: #454545;
+  --color-title: #242424;
+  --color-link: #56a7f7;
+  --color-code: #d4d4d4;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-accent: #b5f4ff;
-    --color-background: #111116;
-    --color-text: #acabbb;
-    --color-title: #ebeaf8;
-    --color-link: #cfb1f7;
-    --color-code: #2e2d3f;
+    --color-accent: #ffffff;
+    --color-background: #171717;
+    --color-text: #b8b8b8;
+    --color-title: #f4f4f4;
+    --color-link: #7cc8ff;
+    --color-code: #474747;
   }
 }
 
@@ -42,8 +60,8 @@
 body,
 html {
   margin: 0;
-  font-size: 17px;
-  line-height: 1.7em;
+  font-size: 14px;
+  line-height: 1.8em;
   background: var(--color-background);
   color: var(--color-text);
   min-height: 100vh;
@@ -61,12 +79,15 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Instrument Serif", serif;
   color: var(--color-title);
+  line-height: 1.5em;
+  font-weight: 500;
   margin: 1em 0;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
 }
 
 .container {

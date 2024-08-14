@@ -1,0 +1,51 @@
+---
+interface Props {
+  url: string;
+  description: string;
+}
+const { url, description } = Astro.props;
+---
+
+<div class="wrapper">
+  <img src={url} alt={description} />
+</div>
+
+<style>
+  .wrapper {
+    position: relative;
+    display: inline-flex;
+    --size: 50px;
+    height: var(--size);
+    width: calc(var(--size) * 1.5);
+    min-width: calc(var(--size) * 1.5);
+    border-radius: calc(var(--size) / 5);
+    margin: 0 10px;
+    box-shadow: var(--shadow2);
+    overflow: hidden;
+    vertical-align: top;
+    transition: 0.1s;
+    transform: rotate(5deg);
+
+    &:hover {
+      transform: rotate(-10deg) scale(1.1);
+    }
+  }
+  .wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: calc(var(--size) / 5);
+  }
+  img {
+    display: inline-flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+</style>
