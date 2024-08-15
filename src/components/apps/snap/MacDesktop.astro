@@ -1,0 +1,81 @@
+---
+import AppStatusbar from "./AppStatusbar.astro";
+import FormattedDateTime from "./FormattedDateTime.astro";
+import AppleIcon from "/assets/apps/snap/icons/apple.svg?raw";
+import WindowPlaceholder from "./WindowPlaceholder.astro";
+---
+
+<div class="desktop">
+  <img class="wallpaper" src="/assets/apps/snap/assets/wallpaper.jpg" alt="" />
+  <WindowPlaceholder />
+  <div class="statusar">
+    <Fragment set:html={AppleIcon} />
+
+    <div class="right">
+      <AppStatusbar />
+      <div class="datetime">
+        <FormattedDateTime date={new Date()} />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .wallpaper {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    object-position: 50% 85%;
+    filter: blur(3px);
+  }
+  .desktop {
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+    background-color: #2b4e4c;
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+      rgba(94, 94, 94, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .desktop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 1px
+      color-mix(in srgb, transparent, var(--color-text) 20%);
+    border-radius: 16px;
+    background: color-mix(in srgb, transparent, var(--color-background) 5%);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .statusar {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background: color-mix(in srgb, transparent, var(--color-background) 20%);
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(19px);
+    font-size: 0.8rem;
+  }
+</style>

@@ -1,0 +1,38 @@
+---
+import Icon from "/assets/apps/snap/icons/app-statusbar-icon.svg?raw";
+---
+
+<div class="wrapper">
+  <div class="icon">
+    <Fragment set:html={Icon} />
+  </div>
+
+  <img class="app" src="/assets/apps/snap/assets/statusbar_app.png" alt="" />
+</div>
+
+<style>
+  .wrapper {
+    position: relative;
+    display: flex;
+  }
+  .icon {
+    display: flex;
+  }
+  .icon :global(svg) {
+    height: 20px;
+    width: 20px;
+  }
+  .icon :global(svg path) {
+    fill: var(--color-text);
+  }
+
+  .app {
+    position: absolute;
+    top: 100%;
+    width: 270px;
+    max-width: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+  }
+</style>

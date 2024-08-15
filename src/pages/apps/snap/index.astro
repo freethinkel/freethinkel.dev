@@ -1,10 +1,150 @@
 ---
+import ArrangeWindows from "../../../components/apps/snap/ArrangeWindows.astro";
+import Banner from "../../../components/apps/snap/Banner.astro";
+import Button from "../../../components/apps/snap/Button.astro";
+import FancyZones from "../../../components/apps/snap/FancyZones.astro";
+import Shortcuts from "../../../components/apps/snap/Shortcuts.astro";
+import Snapping from "../../../components/apps/snap/Snapping.astro";
 import PageLayout from "../../../layouts/PageLayout.astro";
+
+import GumroadIcon from "/assets/apps/snap/icons/gumroad.svg?raw";
 ---
 
 <PageLayout>
-  <main class="container">
-    <h1>Snap app</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, ea!</p>
+  <main>
+    <Banner />
+    <div class="container">
+      <h1>Snap</h1>
+      <h3>The ultimate window manager tool for your Mac.</h3>
+      <p></p>
+
+      <p>
+        Say goodbye to cluttered screens. Snap allows you to quickly and easily
+        arrange your windows side by side, in corners, or maximize them with
+        precision. Tailor your workspace to your workflow with just a few
+        clicks.
+      </p>
+    </div>
+
+    <div class="download container">
+      <Button
+        el="link"
+        url="https://store.trysnap.app"
+        size="large"
+        kind="primary"
+      >
+        <div class="get_btn__inner">
+          <Fragment set:html={GumroadIcon} />
+          <span> Get Snap</span>
+        </div>
+      </Button>
+    </div>
+    <FancyZones />
+    <Snapping />
+    <ArrangeWindows />
+    <Shortcuts />
   </main>
 </PageLayout>
+
+<style>
+  :global(.container) {
+    max-width: 1000px !important;
+  }
+  :root {
+    --color-accent: #3272eb;
+    --color-text: #1f1f1f;
+    --color-background: #ffffff;
+    --shadow1: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+      rgba(94, 94, 94, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    tab-size: 4;
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      sans-serif,
+      Apple Color Emoji,
+      Segoe UI Emoji,
+      Segoe UI Symbol,
+      Noto Color Emoji;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --color-accent: #3272eb;
+      --color-text: #f6f6f6;
+      --color-background: #1b1b1b;
+    }
+  }
+  h1 {
+    margin: 0;
+    font-size: 5rem;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: -0.25rem;
+    font-weight: bold;
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      sans-serif,
+      Apple Color Emoji,
+      Segoe UI Emoji,
+      Segoe UI Symbol,
+      Noto Color Emoji;
+
+    @media screen and (max-width: 700px) {
+      font-size: 4rem;
+      line-height: 1;
+    }
+  }
+  h1 {
+    margin-bottom: 12px;
+    margin-top: 24px;
+  }
+  h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    @media screen and (max-width: 700px) {
+      font-size: 1.5rem;
+    }
+  }
+  .download {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .get_btn__inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .get_btn__inner span {
+    margin-top: 2px;
+  }
+  .get_btn__inner :global(svg) {
+    height: 24px;
+  }
+
+  :global(p) {
+    max-width: 900px;
+    font-size: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  :global(a) {
+    text-decoration: none;
+    --color-text: #000;
+
+    @media (prefers-color-scheme: dark) {
+      --color-text: #fff;
+    }
+  }
+</style>

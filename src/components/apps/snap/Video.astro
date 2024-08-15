@@ -1,0 +1,26 @@
+---
+interface Props {
+  src: string;
+}
+const { src } = Astro.props;
+---
+
+<div class="wrapper">
+  <video preload="preload" muted autoplay loop>
+    <source src={src} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<style>
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  video {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid color-mix(in srgb, transparent, var(--color-text) 12%);
+    box-shadow: var(--shadow1);
+  }
+</style>

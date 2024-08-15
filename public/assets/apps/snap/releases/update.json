@@ -1,0 +1,15 @@
+{
+  "version": "v1.2.2",
+  "notes": "Check the complete changelog at https://trysnap.app/changelogs",
+  "pub_date": "2024-04-17T09:36:16.635Z",
+  "platforms": {
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVReXIyV1hkRmJVRWdOb2lVZm1RWFlNa3JueUJkU2FkVG9OTVdSS1M5TTdISk54ZHhWTy9GcXVhdXYwYTJPaE1KM3hEM1Bid2VnMmJHS2FmL3BtbGZnSmJSRWxOZWlvSlFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEzMzQ2NTc2CWZpbGU6U25hcC5hcHAudGFyLmd6CmUzbm9pZ242RmtpY01DaXNRM3hNdFpFUGIvQWcrZWZUaGxVYVhpR081dmFCNWRveGZLaXRQeVhWeWRuMlFjSDBLcFNqell0aW9GRkxBSVRpb0g1YkJ3PT0K",
+      "url": "https://trysnap.app/releases/app-x86_64.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVReXIyV1hkRmJVRXFWWXVlN2hYYmdVVytjYUJCWGcrcEpqNnR1N1lxY3JRLzFSSjBUeW54byttdUQ0TlNFbE9tNVhHWjdRU2RxMWg4dXBNdDhndkFzemIwUkpyUkZHd0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEzMzQ2NTA4CWZpbGU6U25hcC5hcHAudGFyLmd6CmwyaVJXRFRpdGpMTlJJU0N3VFZ2OUwxWmFzMStJRi9HWlFBWExKMjR3bjZnOC85bjZJbkZTbUh4TDVZN3UzZ21UeWRaNHVSNlpKZ1dGS214UXFXekJ3PT0K",
+      "url": "https://trysnap.app/releases/app-aarch64.app.tar.gz"
+    }
+  }
+}

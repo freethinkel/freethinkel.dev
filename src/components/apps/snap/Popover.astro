@@ -1,0 +1,78 @@
+<script>
+  const popovers = document.querySelectorAll(".popover__wrapper");
+  popovers.forEach((el) => {
+    const popover = el.querySelector(".popover")!;
+    let timer: null | NodeJS.Timeout;
+    el.addEventListener("mouseenter", () => {
+      popover.classList.add("active");
+      if (timer) {
+        clearTimeout(timer);
+      }
+    });
+    el.addEventListener("mouseleave", () => {
+      timer = setTimeout(() => {
+        popover.classList.remove("active");
+      }, 200);
+    });
+  });
+</script>
+
+<div class="wrapper popover__wrapper">
+  <slot />
+  <div class="popover">
+    <slot name="popover" />
+  </div>
+</div>
+
+<style>
+  .wrapper {
+    position: relative;
+    display: inline-flex;
+    cursor: default;
+  }
+  .popover {
+    --background: color-mix(
+      in srgb,
+      var(--color-background) 91%,
+      var(--color-text)
+    );
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 20px;
+    background-color: var(--background);
+    border-radius: 10px;
+    drop-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    left: 50%;
+    visibility: hidden;
+    transform: translateY(10px) translateX(-50%);
+    transition: 0.1s cubic-bezier(0.1, 0, 0, 1);
+  }
+  .popover.active {
+    transition: 0.1s cubic-bezier(0.3, 0, 1, 0.8);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px) translateX(-50%);
+  }
+  .popover::before {
+    content: "";
+    --size: 20px;
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--background);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: none;
+    border-top: none;
+    position: absolute;
+    top: 100%;
+    margin-top: -2.5px;
+    left: 50%;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    transform: rotate(45deg) translateX(-50%);
+  }
+</style>
