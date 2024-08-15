@@ -1,0 +1,60 @@
+---
+interface Props {
+  kind: "primary" | "outline" | "text";
+  size: "large" | "normal";
+  el: "button" | "link";
+  url?: string;
+  class?: string;
+}
+
+const {
+  kind = "primary",
+  size = "normal",
+  class: klass,
+  el = "button",
+  url,
+} = Astro.props;
+---
+
+{
+  el === "button" && (
+    <button class={`button size__${size} kind__${kind} ${klass}`}>
+      <slot />
+    </button>
+  )
+}
+{
+  el === "link" && (
+    <a href={url} class={`button size__${size} kind__${kind} ${klass}`}>
+      <slot />
+    </a>
+  )
+}
+
+<style>
+  .button {
+    appearance: none;
+    border: none;
+    font-size: 1rem;
+    background: none;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .size__normal {
+    height: 32px;
+  }
+  .size__large {
+    height: 54px;
+    font-size: 1.13rem;
+    padding: 0 24px;
+    border-radius: 12px;
+    font-weight: 600;
+  }
+
+  .kind__primary {
+    background: var(--color-text);
+    color: var(--color-background);
+  }
+</style>

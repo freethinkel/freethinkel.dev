@@ -1,10 +1,74 @@
 ---
+import Button from "../../../components/apps/snap/Button.astro";
+import Video from "../../../components/apps/snap/Video.astro";
 import PageLayout from "../../../layouts/PageLayout.astro";
+import AppleIcon from "/assets/icons/apple.svg?raw";
+import LinkIcon from "/assets/icons/link.svg?raw";
 ---
 
 <PageLayout>
   <main class="container">
-    <h1>Friendzone app</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, ea!</p>
+    <h1>Friendzone</h1>
+    <div class="top">
+      <img class="app_icon" src="/assets/apps/fiendzone/icon.png" />
+      <p>
+        Traveling? Friendzone helps you juggle multiple timezones so you can
+        beat the jet lag.
+      </p>
+    </div>
+    <div>
+      <Video src="/assets/apps/fiendzone/demo.mp4" />
+    </div>
+    <div class="center">
+      <Button kind="primary" url="" size="large" el="link">
+        <Fragment set:html={AppleIcon} />
+         Download for MacOS
+      </Button>
+    </div>
+    <div class="center">
+      <Button kind="primary" url="/" size="large" el="link">
+        Download for iOS
+        <Fragment set:html={LinkIcon} />
+      </Button>
+      <Button
+        kind="primary"
+        url="https://apps.rustore.ru/app/dev.freethinkel.friendzone"
+        size="large"
+        el="link"
+      >
+        Download for Android
+        <Fragment set:html={LinkIcon} />
+      </Button>
+    </div>
   </main>
 </PageLayout>
+
+<style>
+  .top {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .app_icon {
+    --size: 100px;
+    height: var(--size);
+    width: var(--size);
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & :global(svg) {
+      height: 24px;
+      width: 24px;
+      margin-top: -4px;
+    }
+    & :global(a) {
+      gap: 10px;
+      align-items: center;
+    }
+  }
+</style>

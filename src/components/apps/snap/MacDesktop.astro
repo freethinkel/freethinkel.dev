@@ -1,14 +1,14 @@
 ---
 import AppStatusbar from "./AppStatusbar.astro";
 import FormattedDateTime from "./FormattedDateTime.astro";
-import AppleIcon from "/assets/apps/snap/icons/apple.svg?raw";
+import AppleIcon from "/assets/icons/apple.svg?raw";
 import WindowPlaceholder from "./WindowPlaceholder.astro";
 ---
 
 <div class="desktop">
   <img class="wallpaper" src="/assets/apps/snap/assets/wallpaper.jpg" alt="" />
   <WindowPlaceholder />
-  <div class="statusar">
+  <div class="statusbar">
     <Fragment set:html={AppleIcon} />
 
     <div class="right">
@@ -64,7 +64,7 @@ import WindowPlaceholder from "./WindowPlaceholder.astro";
     align-items: center;
     gap: 10px;
   }
-  .statusar {
+  .statusbar {
     position: absolute;
     top: -1px;
     left: 0;
