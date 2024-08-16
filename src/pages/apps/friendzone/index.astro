@@ -10,17 +10,24 @@ import LinkIcon from "/assets/icons/link.svg?raw";
   <main class="container">
     <h1>Friendzone</h1>
     <div class="top">
-      <img class="app_icon" src="/assets/apps/fiendzone/icon.png" />
+      <img class="app_icon" src="/assets/apps/friendzone/icon.png" />
       <p>
         Traveling? Friendzone helps you juggle multiple timezones so you can
         beat the jet lag.
       </p>
     </div>
     <div>
-      <Video src="/assets/apps/fiendzone/demo.mp4" />
+      <Video src="/assets/apps/friendzone/demo.mp4" />
     </div>
     <div class="center">
-      <Button kind="primary" url="" size="large" el="link">
+      <Button
+        kind="primary"
+        url="/assets/apps/friendzone/releases/1.2.0+4/friendzone-1.2.0+4-macos.dmg"
+        size="large"
+        openInNewTab
+        el="link"
+        download
+      >
         <Fragment set:html={AppleIcon} />
          Download for MacOS
       </Button>
@@ -34,6 +41,7 @@ import LinkIcon from "/assets/icons/link.svg?raw";
         kind="primary"
         url="https://apps.rustore.ru/app/dev.freethinkel.friendzone"
         size="large"
+        openInNewTab
         el="link"
       >
         Download for Android

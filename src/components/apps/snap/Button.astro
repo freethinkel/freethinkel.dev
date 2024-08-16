@@ -4,6 +4,8 @@ interface Props {
   size: "large" | "normal";
   el: "button" | "link";
   url?: string;
+  download?: boolean;
+  openInNewTab?: boolean;
   class?: string;
 }
 
@@ -12,6 +14,8 @@ const {
   size = "normal",
   class: klass,
   el = "button",
+  download,
+  openInNewTab,
   url,
 } = Astro.props;
 ---
@@ -25,7 +29,12 @@ const {
 }
 {
   el === "link" && (
-    <a href={url} class={`button size__${size} kind__${kind} ${klass}`}>
+    <a
+      href={url}
+      class={`button size__${size} kind__${kind} ${klass}`}
+      target={openInNewTab ? "_blank" : null}
+      download={download ? "" : null}
+    >
       <slot />
     </a>
   )
