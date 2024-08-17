@@ -11,8 +11,8 @@
       <sparkle:version>4</sparkle:version>
       <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
       <sparkle:releaseNotesLink>https://freethinkel.dev/assets/apps/friendzone/releases/CHANGELOG.html</sparkle:releaseNotesLink>
-      <pubDate>Sat, 17 Aug 2024 21:04:03</pubDate>
-      <enclosure sparkle:os="macos" type="application/octet-stream" sparkle:edSignature="mFiefB5qfPI/zUaiYIqQLm2BrBuTuQol6lJT0cU7LHM9HPHSNgwMiI0M48wqwzTxZoMOwbZAYdCmqkK8h8KOCQ==" length="23626355" url="https://freethinkel.dev/assets/apps/friendzone/releases/Friendzone.zip"/>
+      <pubDate>Sat, 17 Aug 2024 21:10:52</pubDate>
+      <enclosure sparkle:os="macos" type="application/octet-stream" sparkle:edSignature="Bfmva99pfvED0LQR3mvynyXCPlBpOJFewA9V3T1fecpanWLiOg8GpOgKP66R8Y78uGfJ5cwMImfU+9aiyflIDA==" length="23626355" url="https://freethinkel.dev/assets/apps/friendzone/releases/Friendzone.zip"/>
     </item>
   </channel>
 </rss>
