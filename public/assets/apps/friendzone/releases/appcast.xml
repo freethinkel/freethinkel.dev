@@ -2,17 +2,15 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
     <title>Friendzone</title>
-    <description>Friendzone</description>
+    <description>Description</description>
     <language>en</language>
     <item>
       <title>Version 1.2.0</title>
-      <!-- For the macOS item, it is recommended to add 'sparkle:version' and
-      'sparkle:shortVersionString' to the item node, rather than as part of the enclosure. -->
       <sparkle:version>4</sparkle:version>
       <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
       <sparkle:releaseNotesLink>https://freethinkel.dev/assets/apps/friendzone/releases/CHANGELOG.html</sparkle:releaseNotesLink>
-      <pubDate>Sat, 17 Aug 2024 21:10:52</pubDate>
-      <enclosure sparkle:os="macos" type="application/octet-stream" sparkle:edSignature="Bfmva99pfvED0LQR3mvynyXCPlBpOJFewA9V3T1fecpanWLiOg8GpOgKP66R8Y78uGfJ5cwMImfU+9aiyflIDA==" length="23626355" url="https://freethinkel.dev/assets/apps/friendzone/releases/Friendzone.zip"/>
+      <pubDate>Mon, 19 Aug 2024 04:38:16 GMT</pubDate>
+      <enclosure sparkle:os="macos" type="application/octet-stream" sparkle:edSignature="lnxn6MAqDRgYWb9PwYqMv0YTlAl0n83T7dPJJu52xkdNbc5CEbvoOTpP7MXK8wO7gUTtMSvHiD7sF/Lva8AnBQ==" length="23773966" url="https://freethinkel.dev/assets/apps/friendzone/releases/Friendzone.zip"/>
     </item>
   </channel>
 </rss>
