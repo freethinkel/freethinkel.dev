@@ -5,12 +5,12 @@
     <description>Description</description>
     <language>en</language>
     <item>
-      <title>Version 1.2.4</title>
-      <sparkle:version>9</sparkle:version>
-      <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+      <title>Version 1.2.5</title>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>1.2.5</sparkle:shortVersionString>
       <sparkle:releaseNotesLink>https://freethinkel.dev/assets/apps/friendzone/releases/CHANGELOG.html</sparkle:releaseNotesLink>
-      <pubDate>Fri, 23 Aug 2024 09:44:37 GMT</pubDate>
-      <enclosure sparkle:os="macos" type="application/octet-stream" sparkle:edSignature="n2DWQJ0QtuCC4hSZYCgb6P45ZVIVViU0tr3cV/Nun4N8nQ8yTE6VXM6Yfkrrf5PtiF5y3K/meru1IqdaAA5FCw==" length="34556918" url="https://freethinkel.dev/assets/apps/friendzone/releases/Friendzone.zip"/>
+      <pubDate>Sun, 25 Aug 2024 16:25:43 GMT</pubDate>
+      <enclosure sparkle:os="macos" type="application/octet-stream" sparkle:edSignature="flb0WJsbW0DhTG5g9VQGpBiaNSBTcX4K1RqPU3bWh39s0l9vYBm/2m0a6sNrXLnEHmr3gcuZlrHIwJzceCoPBQ==" length="34518353" url="https://freethinkel.dev/assets/apps/friendzone/releases/Friendzone.zip"/>
     </item>
   </channel>
 </rss>
