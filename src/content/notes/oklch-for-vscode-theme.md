@@ -1,6 +1,6 @@
 ---
 title: "How I Used OKLCH to Improve My VS Code Theme"
-description: "Choosing the right text editor can make a world of difference in your coding and writing experience"
+description: "Creating a theme builder with TypeScript and OKLCH"
 pubDate: "Nov 22 2024"
 heroImage: "/assets/blog/oklch-for-vscode-theme/banner.jpg"
 ---
