@@ -93,9 +93,9 @@ With this structure, I can define a minimal set of base colors, and the builder 
 \
 With just a few base colors, my theme builder generates all the additional shades and tones needed for a complete VS Code theme.
 
-## Introducing OKLCH for Better Color Accuracy
+## Introducing [OKLCH](https://oklch.com) for Better Color Accuracy
 
-While working on the theme builder, I realized I could take the color handling even further. Specifically, I wanted to address issues with color lightness. Different colors can appear inconsistent in brightness even if their RGB values suggest they’re balanced. This is where **OKLCH** comes in.
+While working on the theme builder, I realized I could take the color handling even further. Specifically, I wanted to address issues with color lightness. Different colors can appear inconsistent in brightness even if their RGB values suggest they’re balanced. This is where OKLCH comes in.
 
 OKLCH is a perceptually uniform color space, meaning colors are adjusted in a way that aligns better with human vision. By using OKLCH, I can ensure consistent luminance across my theme, making it visually harmonious.
 
