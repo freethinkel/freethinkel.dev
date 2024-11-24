@@ -129,10 +129,10 @@ export const normalizeLightness = (obj: Record<string, string>) => {
           convertOklabToRgb({
             ...color,
             l: lightness,
-          })
+          }),
         ),
       ];
-    })
+    }),
   );
 };
 ```
@@ -192,10 +192,6 @@ terminal: normalizeLightness(
 
 ![Dark theme](/assets/blog/oklch-for-vscode-theme/dark-terminal.jpg)
 ![Light theme](/assets/blog/oklch-for-vscode-theme/light-terminal.jpg)
-
-## Conclusion
-
-Using OKLCH and creating a TypeScript-based theme builder has significantly improved my workflow for designing VS Code themes. Not only can I reuse colors and generate variations dynamically, but I can also ensure a consistent and visually appealing design. If you’re into theme customization, I highly recommend exploring OKLCH and building tools to automate repetitive tasks. It’s a game-changer!
 
 ## Resources
 
