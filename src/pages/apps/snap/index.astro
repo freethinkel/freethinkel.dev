@@ -1,22 +1,25 @@
 ---
-import ArrangeWindows from "../../../components/apps/snap/ArrangeWindows.astro";
-import Banner from "../../../components/apps/snap/Banner.astro";
-import Button from "../../../components/apps/snap/Button.astro";
-import FancyZones from "../../../components/apps/snap/FancyZones.astro";
-import Shortcuts from "../../../components/apps/snap/Shortcuts.astro";
-import Snapping from "../../../components/apps/snap/Snapping.astro";
+import ArrangeWindows from "./components/ArrangeWindows.astro";
+import Banner from "./components/Banner.astro";
+import Button from "./components/Button.astro";
+import FancyZones from "./components/FancyZones.astro";
+import Shortcuts from "./components/Shortcuts.astro";
+import Snapping from "./components/Snapping.astro";
 import PageLayout from "../../../layouts/PageLayout.astro";
 
 import GumroadIcon from "/assets/apps/snap/icons/gumroad.svg?raw";
 ---
 
-<PageLayout>
+<PageLayout
+  title="Snap"
+  description="The ultimate window manager tool for your Mac."
+  image="/assets/apps/snap/icon.png"
+>
   <main>
     <Banner />
     <div class="container">
       <h1>Snap</h1>
       <h3>The ultimate window manager tool for your Mac.</h3>
-      <p></p>
 
       <p>
         Say goodbye to cluttered screens. Snap allows you to quickly and easily
@@ -60,14 +63,6 @@ import GumroadIcon from "/assets/apps/snap/icons/gumroad.svg?raw";
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
     tab-size: 4;
-    font-family:
-      ui-sans-serif,
-      system-ui,
-      sans-serif,
-      Apple Color Emoji,
-      Segoe UI Emoji,
-      Segoe UI Symbol,
-      Noto Color Emoji;
     font-feature-settings: normal;
     font-variation-settings: normal;
     -webkit-tap-highlight-color: transparent;

@@ -1,12 +1,15 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
-import ProfileCard from "../components/ProfileCard.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import TitleCard from "../components/TitleCard.astro";
 import Interactive from "../components/Interactive.astro";
 ---
 
-<PageLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<PageLayout
+  title={SITE_TITLE}
+  description={SITE_DESCRIPTION}
+  image="/assets/profile/im.jpg"
+>
   <main class="container">
     <h1>
       <span> I'm</span>
