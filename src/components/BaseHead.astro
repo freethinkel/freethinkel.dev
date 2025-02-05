@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import { ViewTransitions } from "astro:transitions";
+import Snow from "./Snow.astro";
 
 interface Props {
   title: string;
@@ -79,3 +80,4 @@ const { title, description, image } = Astro.props;
 </script>
 
 <ViewTransitions />
+<Snow />
