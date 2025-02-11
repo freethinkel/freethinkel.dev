@@ -9,8 +9,8 @@
       <sparkle:version>23</sparkle:version>
       <sparkle:shortVersionString>1.4.6</sparkle:shortVersionString>
       <sparkle:releaseNotesLink>https://freethinkel.dev/assets/apps/friendzone/releases/CHANGELOG.html</sparkle:releaseNotesLink>
-      <pubDate>Tue, 11 Feb 2025 06:17:59 GMT</pubDate>
-      <enclosure sparkle:os="macos" type="application/octet-stream" sparkle:edSignature="1VXGgTC8EWWSFmGvDxGRbJFRUSlvp0/ELSVBbLGgPQ3uTywJ/hRy5+wOtEAw6uczkEtDEzSLTzPshkLLdgAsBg==" length="34367000" url="https://freethinkel.dev/assets/apps/friendzone/releases/Friendzone.zip"/>
+      <pubDate>Tue, 11 Feb 2025 10:01:47 GMT</pubDate>
+      <enclosure sparkle:os="macos" type="application/octet-stream" sparkle:edSignature="iivS76/hNryx66AnwyOMDSIgHPcRkfdWrCN37LKLU0C0xY16NUOq2M2rAcO7ohiO9q2MhMzDysPKjtvjNqxwDg==" length="34371217" url="https://freethinkel.dev/assets/apps/friendzone/releases/Friendzone.zip"/>
     </item>
   </channel>
 </rss>
