@@ -1,14 +1,14 @@
 {
-  "version": "v1.4.0",
+  "version": "v1.4.1",
   "notes": "Check the complete changelog at https://github.com/freethinkel/snap",
-  "pub_date": "2025-05-27T10:00:39.622Z",
+  "pub_date": "2025-05-27T10:30:45.764Z",
   "platforms": {
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVReXIyV1hkRmJVRWlZTTN6L0dLYnVYNTc4Zlg4TWxnbTU4SEhXSEhOaktNMWR4MUNMV3JkNTRFb29pSVdMenpJVFNNMXRBNW9mRU5TNUVXc1VjTWRwekIvb1hzUTJwS1FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ4MzQwMDM5CWZpbGU6U25hcC5hcHAudGFyLmd6CktELzlUVmluVHpQUGJkdThwRmFnaVZoMjdHQmtsU2JTNytPY2dlU0RCeXNvQjN1ak5wYWVmY3ZyUHorZjZaRG0rS05kYlc0ZUxRdWFYUWgrRWx6YURnPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVReXIyV1hkRmJVRXE2aE5TeWZDUlFZS1lKYkhGejZ3N3BFNGVYT2MzRVRod0U0VXpnS2tOUXRsRTluMkpHZ2pqWURXdlNmNTJCLy9ENnJOSVVoTzVYV2R3VnVGK0hlN1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ4MzQxODQ1CWZpbGU6U25hcC5hcHAudGFyLmd6ClA1VVFxQ3BEbUdlL1BaYU93Y2c5b0xHR1dkN1dCOEt0d3lBZnZhQzJ3bm05WGo2dVJhOHhrODlKSTNyU2svNzNQZWpiOFZnV3hMTzlIQ1VFSUo0VkRBPT0K",
       "url": "https://freethinkel.dev/assets/apps/snap/releases/app-x86_64.app.tar.gz"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVReXIyV1hkRmJVRXZEZ21KbnQ1N1RFUGNFbGtLUlJjYkdnQWpxK29zVkNSakp4WHlmK1RlMU1uRjBIaWFxVGRFcUYvRnp0aFFzVExkTGpvbkV4aXZMVXN5SXpNaS9FMWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ4MzM5OTQyCWZpbGU6U25hcC5hcHAudGFyLmd6Cmc1Ly9oVm1DLzkray9xNHMrM2JLN1lsWVV5bG51RmQ3UFRlNE95aWcySEsyY1l1OHpudW5BN1VleHJUbjBzaG1YbGpiT0NRLy9OS1QyTVUxU3BmN0NnPT0K",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVReXIyV1hkRmJVRXJHak9TdktWOTltMCt1VldBVXg3V3R2Ynh3WXJBSm56SjRncnJuSUpvbTBPakgyUXNyQ0FZeVhleE1WSEpMZ0srTC9WRUZuV2VDWWdJK2h5TnNGY0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ4MzQxNzgyCWZpbGU6U25hcC5hcHAudGFyLmd6Cnp4WDlTSDlsYnZUQnR2b1d6MmRTR3FGWGdOckFnL3NZV0tMU1dGdnR2alYrQmV4bU4wU0Fxc2p0VUQrMG5PbVltRGN4dGErdk5xclRGMDVNdG5DMURnPT0K",
       "url": "https://freethinkel.dev/assets/apps/snap/releases/app-aarch64.app.tar.gz"
     }
   }
